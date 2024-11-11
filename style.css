@@ -53,6 +53,29 @@
 span {
   color: #00abf0;
 }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-toggler {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  display: none; /* hidden by default, will be displayed on smaller screens */
+}
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: inline;
+  }
+}
+
+.navbar-links li {
+  display: inline;
+}
 
 .navbar a {
   font-size: 20px;
@@ -82,6 +105,23 @@ span {
   transition: 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .header{
+    padding: 25px 10%;
+  }
+  .navbar-toggler {
+    display: inline;
+  }
+  .navbar-links {
+    display: none; /* hidden by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .Contact {
+    display: none;
+  }
+}
 .Contact:hover {
   background-color: #00abf0;
   color: aliceblue;
