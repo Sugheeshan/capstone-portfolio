@@ -67,9 +67,50 @@ span {
   cursor: pointer;
   display: none; /* hidden by default, will be displayed on smaller screens */
 }
+
 @media (max-width: 768px) {
   .navbar-toggler {
     display: inline;
+  }
+
+  .header {
+    padding: 25px 10%;
+  }
+  .navbar-toggler {
+    display: inline;
+  }
+  .navbar-links {
+    display: none; /* hidden by default on small screens */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .Contact {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .home-content h3 {
+    margin-top: 25%;
+  }
+
+  .about {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .image-1 {
+    margin-top: 0;
+  }
+
+  .image-2 {
+    height: 421px;
+    width: 300px;
   }
 }
 
@@ -105,23 +146,6 @@ span {
   transition: 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .header{
-    padding: 25px 10%;
-  }
-  .navbar-toggler {
-    display: inline;
-  }
-  .navbar-links {
-    display: none; /* hidden by default on small screens */
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  .Contact {
-    display: none;
-  }
-}
 .Contact:hover {
   background-color: #00abf0;
   color: aliceblue;
@@ -130,6 +154,8 @@ span {
 }
 .image-1 {
   margin-top: 5rem;
+  margin-bottom: 20%;
+
   border-radius: 20%;
   border: 2px solid transparent;
   transition: 0.3s ease;
